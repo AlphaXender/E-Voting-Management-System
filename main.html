@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>e-Voting Management System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -26,14 +27,29 @@
       <input type="data" name="dob" required><br><br>
 
       <label>Gender:</label>&nbsp &nbsp
-      <input type="radio" name="gender" class="g" value="male">Male<br>
-      <br>
+      <input type="radio" name="gender" class="g" value="male">Male
       <input type="radio" name="gender" class="g" value="female" checked>Female
+       <br><br>
 
       <label>CNIC:</label>&nbsp &nbsp
       <input type="number" name="cnic" placeholder="Enter Your CNIC Number" maxlength="15" required><br><br>
-      
+
+      <label>Political Parties:</label>&nbsp &nbsp 
+      <select name="political" >
+      <option value="NULL">Choose Political Party</option>
+      <option value="NULL">BJP</option>
+      <option value="NULL">INC</option>
+      <option value="NULL">TMC</option>
+      <option value="NULL">AAP</option>
+      <option value="NULL">SP</option>
+      <option value="NULL">SS</option>
+      <option value="NULL">AD</option>
+      </select><br>
+
     </fieldset>
+
+    <input type="submit" name="Submit" value="Submit">
+
   </div>
 </body>
 
